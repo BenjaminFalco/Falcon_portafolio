@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Benjamín Falcón</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background: #f4f4f9;
-      color: #333;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    }
-    .contact {
-      margin-bottom: 20px;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV · Benjamín Falcón</title>
+  <meta name="description" content="Currículum de Benjamín Falcón Olguín: desarrollador full-stack con experiencia en React, Flutter, NestJS, MySQL y Firebase." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Benjamín Andrés Falcón Olguín</h1>
-    <p class="contact">📍 Chillán, Chile | 📧 falcon.benjamin.inf@gmail.com | 📱 974685122</p>
-    
-    <div class="section">
-      <h2>Perfil</h2>
-      <p>Desarrollador de software con experiencia en frontend y backend, en proyectos ERP y aplicaciones móviles con integración a la nube y módulos offline. Manejo React, Flutter, NestJS, MySQL y buenas prácticas de documentación y versionado (Azure DevOps, Git). Me destaco por adaptarme rápido, entregar soluciones claras y orientadas al usuario.</p>
+  <header>
+    <div class="nav">
+      <div class="row">
+        <span class="kbd">CV</span>
+        <strong>Benjamín Falcón</strong>
+      </div>
+      <div class="row">
+        <a class="btn" href="./cv_benjamin_falcon.pdf" target="_blank" download>Descargar PDF</a>
+        <button class="btn primary" id="printBtn">Imprimir / Guardar PDF</button>
+        <button class="btn" id="themeBtn">Modo claro/oscuro</button>
+      </div>
     </div>
-    
-    <div class="section">
-      <h2>Educación</h2>
-      <p>Ingeniero de Ejecución en Computación e Informática - Instituto Profesional Virginio Gómez</p>
-    </div>
-    
-    <div class="section">
-      <h2>Experiencia Profesional</h2>
-      <ul>
-        <li><b>Desarrollador Junior</b> - Bexcon Limitada  
-        Participación en el desarrollo de módulos clave para un sistema ERP (ventas y compras). Frontend y backend con React, TypeScript, NestJS y MySQL.</li>
-        
-        <li><b>Desarrollador Freelance</b> - Proyecto IANSA I+D  
-        Desarrollo de aplicación móvil en Flutter con integración a Firebase para registro de tratamientos agrícolas. Proyecto en fase final, con funcionalidades principales listas y módulo offline en desarrollo.</li>
-      </ul>
-    </div>
-    
-    <div class="section">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Desarrollo de aplicaciones móviles multiplataforma</li>
-        <li>Construcción de interfaces dinámicas y responsivas</li>
-        <li>Integración de APIs y servicios en la nube</li>
-        <li>Manejo de bases de datos relacionales y no relacionales</li>
-        <li>Trabajo en entornos ágiles y equipos multidisciplinarios</li>
-      </ul>
-    </div>
-    
-    <div class="section">
-      <h2>Herramientas y Tecnologías</h2>
-      <ul>
-        <li><b>Frontend:</b> React, Flutter</li>
-        <li><b>Backend:</b> NestJS, Node.js</li>
-        <li><b>Lenguajes:</b> TypeScript, Dart</li>
-        <li><b>Bases de datos:</b> MySQL, SQL Server, Firebase</li>
-        <li><b>Otros:</b> Git, TypeORM</li>
-      </ul>
-    </div>
-  </div>
+  </header>
+
+  <main class="wrap">
+    <article class="card">
+      <h1>Benjamín Falcón Olguín</h1>
+      <p class="muted">📧 <a href="mailto:falcon.benjamin.inf@gmail.com">falcon.benjamin.inf@gmail.com</a></p>
+
+      <section>
+        <h3>Perfil</h3>
+        <p>Trabajo ágil y rápido, destacado en la creación y optimización de soluciones tecnológicas y habilidad para resolver problemas de forma eficaz. Tomar decisiones con mente fría.</p>
+      </section>
+
+      <section>
+        <h3>Habilidades Técnicas</h3>
+        <ul>
+          <li>Experiencia participando en equipos de desarrollo, aportando en la construcción de soluciones y manteniendo un ambiente colaborativo.</li>
+          <li>Conocimientos aplicados en React, Flutter, NestJS, TypeScript y Dart, adquiridos en proyectos ERP y aplicaciones móviles con integración cloud y offline.</li>
+          <li>Manejo de bases de datos relacionales y no relacionales (MySQL, SQL Server, Firebase/Firestore).</li>
+          <li>Integración de servicios en la nube y APIs REST, asegurando conectividad y escalabilidad en los proyectos.</li>
+          <li>Implementación de módulos offline con sincronización cloud/local, mejorando la disponibilidad de datos.</li>
+          <li>Uso de Git y Azure DevOps para versionado, seguimiento de tareas y buenas prácticas de equipo.</li>
+          <li>Capacidad de planificación y estimación de tareas dentro de metodologías ágiles (Scrum).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Experiencia Profesional</h3>
+        <div class="list">
+          <div class="item">
+            <div class="row" style="justify-content:space-between">
+              <strong>Bexcon Limitada | Desarrollador Junior – React, NestJS, MySQL</strong>
+              <span class="when">Sep 2024 – May 2025 · Chillán, Chile</span>
+            </div>
+            <ul>
+              <li>Participación en el desarrollo de módulos clave para un sistema ERP, abarcando funcionalidades de ventas y compras, trabajando tanto en frontend como backend.</li>
+              <li>Desarrollo de interfaces dinámicas en React y lógica de negocio en NestJS (TypeScript).</li>
+              <li>Implementación de consultas optimizadas en MySQL, reduciendo tiempos de respuesta en procesos críticos.</li>
+              <li>Colaboración en un equipo bajo metodologías ágiles, participando en code reviews y control de versiones con Git/Azure DevOps.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="row" style="justify-content:space-between">
+              <strong>IANSA I+D | Desarrollador Freelance – Flutter, Firebase, Hive</strong>
+              <span class="when">Abr 2025 – Ago 2025 · Chillán, Chile</span>
+            </div>
+            <ul>
+              <li>Desarrollo de una aplicación móvil para el registro de tratamientos agrícolas, con integración a la nube y módulo offline.</li>
+              <li>Construcción de app multiplataforma en Flutter/Dart, con almacenamiento local en Hive y sincronización con Firebase Firestore.</li>
+              <li>Diseño e implementación de módulo offline con sincronización cloud/local, garantizando continuidad de uso en zonas sin conexión.</li>
+              <li>Coordinación con stakeholders para la definición de requerimientos y entrega de avances periódicos.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Competencias</h3>
+        <ul>
+          <li>Comunicación efectiva y habilidades sociales.</li>
+          <li>Pensamiento crítico y capacidad de análisis.</li>
+          <li>Aprendizaje rápido y adaptabilidad.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Educación</h3>
+        <p><strong>Instituto Profesional Virginio Gómez</strong><br>
+        Título Profesional: Ingeniero en Informática. Egresado y titulado Marzo 2025.</p>
+      </section>
+
+      <section>
+        <h3>Idiomas</h3>
+        <p>Inglés (intermedio)</p>
+      </section>
+
+      <section>
+        <h3>Hobbies</h3>
+        <p>Skateboard / Longboard · Ejercicio físico / Gym · Música (rock sinfónico 80’)</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="muted">
+    © <span id="y"></span> Benjamín Falcón · Blog Personal
+  </footer>
+
+  <script src="./script.js" defer></script>
 </body>
 </html>

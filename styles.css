@@ -182,3 +182,77 @@ footer{opacity:.8;padding:32px 0;text-align:center}
   opacity: 0;
   transform: translateY(10px) scale(.8);
 }
+/* ---------- Línea de tiempo elegante ---------- */
+.timeline{
+  position: relative;
+  margin: 18px 0 0;
+  padding-left: 26px;
+  list-style: none;
+}
+.timeline::before{
+  content:"";
+  position:absolute; left:8px; top:0; bottom:0;
+  width:2px;
+  background: linear-gradient(180deg, var(--brand), var(--brand-2));
+  opacity:.8;
+}
+.tl-item{
+  position:relative;
+  margin: 0 0 26px 0;
+}
+
+.tl-content{
+  padding:8px 12px 2px 0;
+}
+.tl-head{
+  display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  padding-bottom:6px; border-bottom:1px dashed var(--border);
+}
+.tl-head strong{ font-weight:700 }
+.tl-head .when{ font-size:12px; color:var(--muted) }
+
+.tl-bullets{
+  margin:10px 0 0 0; padding-left:18px;
+}
+.tl-bullets li{
+  margin:0 0 6px 0;
+}
+
+/* hover sutil en desktop */
+@media (hover:hover){
+  .tl-item:hover .tl-dot{
+    transform: scale(1.06);
+    box-shadow: 0 0 0 4px rgba(126,211,252,.25), 0 6px 20px rgba(0,0,0,.45);
+    transition: .25s ease;
+  }
+}
+
+/* ---------- Detalles bonitos globales ---------- */
+h3{
+  position:relative;
+  display:inline-block;
+  padding-right:8px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+h3::after{
+  content:"";
+  display:block; height:2px; margin-top:6px;
+  background: linear-gradient(90deg, var(--brand), transparent);
+  opacity:.7;
+  border-radius:2px;
+}
+
+/* chips más suaves */
+.chip{ filter: drop-shadow(0 1px 0 rgba(0,0,0,.2)); }
+
+/* botones un poco más “táctiles” */
+.btn{ box-shadow: 0 1px 0 rgba(0,0,0,.25); }
+.btn.primary{ box-shadow: 0 6px 24px rgba(94,234,212,.2); }
+
+/* tema claro: refuerzo leves */
+[data-theme="light"] h3{ color:#0b1220; background:none; }
+[data-theme="light"] h3::after{
+  background: linear-gradient(90deg, #0b1220, transparent);
+  opacity:.15;
+}

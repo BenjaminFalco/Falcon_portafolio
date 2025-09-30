@@ -3,20 +3,21 @@
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  // Año en footer
+  //Año en footer
   const yEl = $('#y');
   if (yEl) yEl.textContent = new Date().getFullYear();
 
-  // Print rápido
+
   $('#printBtn')?.addEventListener('click', () => window.print());
 
-  // Modo claro/oscuro (persistente)
+  // tema claro/oscuro (persistente)
   const KEY = 'cv-theme';
   const btn = $('#themeBtn');
 
   const applyTheme = (isDark) => {
     document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
-    // Fondo friki solo en modo oscuro
+    
+    //fondo animado solo para tema oscuro
     document.body.classList.toggle('friki-bg', !!isDark);
     // Garantiza que el scroll vertical esté habilitado
     document.documentElement.style.overflowY = '';

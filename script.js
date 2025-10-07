@@ -32,6 +32,8 @@
     const now = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem(KEY, now);
     applyTheme(now === 'dark');
+
+    // Forzar el reflow para reinicio de la animaacion del fondini
   });
 
   // Estilos dinámicos para el fondo friki (sin overflow:hidden)
